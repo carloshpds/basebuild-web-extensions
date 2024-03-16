@@ -1,5 +1,4 @@
 // @ts-ignore
-import { bbWebExtensions } from '../../../dist/src/apps/module/index.js'
-console.log('bbWebExtensions', bbWebExtensions)
+import { bbWebExtensions } from 'basebuild-web-extensions'
 
 export default bbWebExtensions()
