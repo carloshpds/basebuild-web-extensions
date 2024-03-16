@@ -1,6 +1,6 @@
 import { UserConfig as ViteUserConfig } from 'vite'
 import { defineConfig } from 'vite'
-import bbWebExtensionsConfig from './vite.config'
+import bbWebExtensionsConfig from './vite.config.js'
 
 export { bbWebExtensionsConfig }
 

@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/src/module/index.js",
-  "module": "dist/src/module/index.js",
+  "main": "dist/src/apps/module/index.js",
+  "module": "dist/src/apps/module/index.js",
   "license": "MIT",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
