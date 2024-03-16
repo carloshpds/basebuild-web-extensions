@@ -2,18 +2,19 @@
   "folders": [
     {
       "name": "root",
-      "path": "."
+      "path": ".",
     },
     {
       "name": "module",
-      "path": "src/apps/module"
+      "path": "src/apps/module",
     },
     {
       "name": "demo",
-      "path": "src/apps/demo"
+      "path": "src/apps/demo",
     },
   ],
   "settings": {
+    "peacock.color": "#40b883",
     "workbench.colorCustomizations": {
       "activityBar.activeBackground": "#62c99b",
       "activityBar.background": "#62c99b",
@@ -32,7 +33,6 @@
       "titleBar.activeForeground": "#15202b",
       "titleBar.inactiveBackground": "#40b88399",
       "titleBar.inactiveForeground": "#15202b99"
-    },
-    "peacock.color": "#40b883"
+    }
   }
 }
