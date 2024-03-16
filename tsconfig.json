@@ -1,32 +1,30 @@
 {
+  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
+    "declaration": true,
+    "importHelpers": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": false,
+    "resolveJsonModule": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "noEmit": false,
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*",
-        "src/typings/*"
+        "src/apps/module/*"
       ]
-    },
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "./src/apps/module/**/*.ts"
+  ],
+  "ts-node": {
+    "esm": true
+  },
+  "types": [
+    "node",
+    "vite"
+  ]
 }
